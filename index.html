@@ -94,25 +94,54 @@
         font-size: 14px;
       }
     }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.button {
+  display: inline-block;
+  background-color: #2e6c3d;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 10px 5px;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #1f4a28;
+}
   </style></head>
 <body>
   <div class="container">
     <h1>けやきが丘住宅 ホームページ制作のお願い</h1>
 
-    <h2>🌳 想い（意気込み）</h2>
-    <p>
+
+    <h2 class="fade-in">🌳 想い（意気込み）</h2>
+    <p class="fade-in">
       私はけやきが丘住宅に入居して4年目になります。最初は団地に対して「古くて暗い」といったイメージを持っていましたが、実際に暮らしてみるとその印象は大きく変わりました。
     </p>
-    <p>
+    <p class="fade-in">
       行事やイベントが多く、住民同士の交流も活発。自然も豊かで、子どもたちがのびのびと育っていける環境が整っています。住民の方々も、まるで自分の子どものように家族ぐるみで見守ってくれます。タワーマンションや戸建てにはない、人の温もりと地域のつながりがある場所です。
     </p>
-    <p>
+    <p class="fade-in">
       しかし、建物は築年数を重ね、立地も決して便利とは言えず、空き家も少しずつ増えてきています。だからこそ、私たちの世代がこの団地の価値を見つめ直し、その魅力を外部に発信していくことが必要だと感じています。
     </p>
-    <p>
+    <p class="fade-in">
       けやきが丘住宅には「暮らしの魅力」が詰まっています。<br>
       このホームページを通じて、「住んでみたい」「この団地いいな」と感じてもらえるようなサイトを一緒に作りたいと思っています。
     </p>
+
 
     <h2>📄 ご依頼内容</h2>
 
@@ -124,6 +153,7 @@
 
     <h3>■ 改善の目的</h3>
     <p>団地の魅力をしっかり伝え、空き家対策や住民の誇りの醸成、コミュニティ活性化につなげたい。</p>
+
 
     <h3>■ 改善ポイント</h3>
     <ul>
@@ -153,65 +183,146 @@
       </thead>
       <tbody>
         <tr>
-          <td>page1. トップページ</td>
+          <td>🏠page1. トップページ</td>
           <td>最新ニュース、住民向けのお知らせを掲載</td>
         </tr>
         <tr>
-          <td>page2. けやきが丘住宅の紹介</td>
+          <td>🏘️page2. けやきが丘住宅の紹介</td>
           <td>団地の基本情報、住環境、周辺施設など</td>
         </tr>
         <tr>
-          <td>page3. お知らせ／行事予定</td>
+          <td>📢page3. お知らせ／行事予定</td>
           <td>団地のニュース・イベント・月刊ニュース</td>
         </tr>
         <tr>
-          <td>page4. 住民向け情報</td>
+          <td>📢page4. 住民向け情報</td>
           <td>生活マニュアル、防災、申請書など</td>
         </tr>
         <tr>
-          <td>page5. 理事会・委員会</td>
+          <td>🧑‍🤝‍🧑page5. 理事会・委員会</td>
           <td>理事会や委員会の情報、活動報告、住民の参加を促す</td>
         </tr>
         <tr>
-          <td>page6. 管理規約・団地Wiki</td>
+          <td>👂page6. 管理規約・団地Wiki</td>
           <td>ルールの解説、Q&A形式の知識ベース</td>
         </tr>
         <tr>
-          <td>page7. 引っ越し検討者向け</td>
+          <td>🧩page7. 引っ越し検討者向け</td>
           <td>団地の魅力や環境、住民の声など</td>
         </tr>
         <tr>
-          <td>page8. 問い合わせ</td>
+          <td>📬page8. お問い合わせ</td>
           <td>管理事務所情報、Googleフォーム連絡先</td>
         </tr>
       </tbody>
     </table>
 
     <h3>■ 更新体制</h3>
-    <p>IT業務経験あり。WordPressでの更新・運用等も可能です。</p>
+    <p>IT業務経験少々あり</p>
 
-    <h3>■ スケジュール</h3>
-    <ul>
-      <li>5月末：ヒアリングと構成確定</li>
-      <li>6月上旬：デザイン提案</li>
-      <li>6月中旬：制作着手</li>
-      <li>7月末：完成 → 8月：公開判断</li>
-    </ul>
+
+
+<style>
+  .step-card {
+    background: #f8fff9;
+    border-left: 6px solid #2e6c3d;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  .step-card h3 {
+    margin-top: 0;
+    color: #2e6c3d;
+    font-size: 1.2em;
+  }
+
+  .step-card ul {
+    padding-left: 1.2em;
+    margin: 0;
+  }
+
+  .step-card li {
+    margin-bottom: 0.5em;
+  }
+</style>
+
+<h2>🔖 進行のステップ案（提案）</h2>
+
+<div class="step-card">
+  <h3>📌【5月中】準備・合意フェーズ</h3>
+  <ul>
+    <li>🤝 正式に合意</li>
+    <li>📝 制作目的と期待内容の概要共有</li>
+    <li>💬 連絡手段の決定（LINE／Zoomなど）</li>
+  </ul>
+</div>
+
+<div class="step-card">
+  <h3>🗣️【6月上旬】ヒアリングフェーズ（30〜60分）</h3>
+  <ul>
+    <li>🎯 サイトの目的（団地PR、住民向け情報）</li>
+    <li>👀 想定閲覧者（住民、理事、引越し検討者など）</li>
+    <li>🧩 ページ構成の深堀（役割分担やナビ構成）</li>
+    <li>📹 実装範囲の確認（動画／カレンダー／動的ページの有無）</li>
+    <li>📱 スマホ優先の表示（レスポンシブ）</li>
+    <li>🔧 更新しやすさ・運用イメージの共有</li>
+  </ul>
+</div>
+
+<div class="step-card">
+  <h3>📂【6月中旬】構成提案フェーズ</h3>
+  <ul>
+    <li>🗂️ メニュー構成（仮案）を受領し、フィードバック</li>
+    <li>📋 必要素材の洗い出し（写真／文章／PDF／申請書など）</li>
+  </ul>
+</div>
+
+<div class="step-card">
+  <h3>🎨【6月下旬〜7月上旬】デザイン提案フェーズ</h3>
+  <ul>
+    <li>🖼️ デザイン案（色味・構成）の確認とフィードバック</li>
+    <li>✏️ 確定後、コーディング着手</li>
+    <li>📤 素材提供（画像や文言など）</li>
+  </ul>
+</div>
+
+<div class="step-card">
+  <h3>✅【7月中旬〜末】完成・確認フェーズ</h3>
+  <ul>
+    <li>🔍 完成サイトの最終チェック（リンク・誤字など）</li>
+    <li>🌐 仮公開（必要に応じて独自ドメインへ切替）</li>
+    <li>🧪 運用リハーサル（更新・表示テスト）</li>
+    <li>📘 簡易マニュアルの作成</li>
+  </ul>
+</div>
+
+
+
+
 
     <div class="contact-box">
       <h2>📮 担当者連絡先</h2>
       <p><strong>けやきが丘住宅団地管理組合法人 集会所委員会 常任委員</strong></p>
       <p><strong>氏名：</strong>近内 正樹（こんない まさき）</p>
       <p><strong>メール：</strong><a href="mailto:konnai.masaki@gmail.com">konnai.masaki@gmail.com</a></p>
-      <p><strong>LINE：</strong>@konnai</p>
+      <p><strong>LINE：</strong>@konnai16:14 2025/05/20<a class="button" href="https://line.me/ti/p/03FAxwOQwW" target="_blank">LINEで連絡する</a></p>
+
+<!--
       <div class="qr">
         <p><strong>LINE QRコード：</strong></p>
         <img src="images/line_qr.png" alt="LINE QRコード">
       </div>
+-->
     </div>
+
+<h3>■ アクセス地図</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.3110321781282!2d139.56388322876037!3d35.54601989050548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f79bc2b5ac87%3A0xe83379a9d6b0d7f0!2z5riv5YyX44OL44Ol44O844K_44Km44Oz44GR44KE44GN44GM5LiY5Zuj5Zyw!5e0!3m2!1sja!2sjp!4v1747725077911!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
   </div>
+
 
 </body>
 </html>
